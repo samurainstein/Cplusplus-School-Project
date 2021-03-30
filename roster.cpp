@@ -105,6 +105,10 @@ void Roster::printByDegreeProgram(DegreeProgram degreeProgram) {
 	}
 }
 
+Student* Roster::findStudent(int i) {
+	return classRosterArray[i];
+}
+
 	
 
 

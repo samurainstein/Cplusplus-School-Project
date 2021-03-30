@@ -86,4 +86,27 @@ int main() {
 	classRoster->printAll();
 	cout << '\n';
 
+	classRoster->printInvalidEmails();
+	cout << '\n';
+
+	for (int i = 0; i < 5; i++) {
+		classRoster->printAverageDaysInCourse(classRoster->findStudent(i)->GetStudentID());
+	}
+	cout << '\n';
+
+	classRoster->printByDegreeProgram(SOFTWARE);
+	cout << '\n';
+
+	classRoster->remove("A3");
+	cout << '\n';
+
+	classRoster->printAll();
+	cout << '\n';
+
+	classRoster->remove("A3");
+	cout << '\n';
+
+	delete classRoster;
+
+	return 0;
 }
